@@ -1,11 +1,10 @@
-"use client"
-import { SignUp } from "@clerk/nextjs"
 import { Suspense } from "react"
+import SignUpClient from "./SignUpClient"
 
 export default function Page() {
 	return (
-		<Suspense>
-			<SignUp />
+		<Suspense fallback={null}>
+			<SignUpClient />
 		</Suspense>
 	)
 }
