@@ -1,10 +1,1 @@
-import { Suspense } from "react"
-import SignInClient from "./SignInClient"
-
-export default function Page() {
-	return (
-		<Suspense fallback={null}>
-			<SignInClient />
-		</Suspense>
-	)
-}
+export { default } from "./SignInClient"
